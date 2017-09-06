@@ -63,6 +63,16 @@ namespace LightGIS_1._0.Properties {
         /// <summary>
         ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Icon Cross {
+            get {
+                object obj = ResourceManager.GetObject("Cross", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Icon DataAdd {
             get {
                 object obj = ResourceManager.GetObject("DataAdd", resourceCulture);
@@ -77,6 +87,16 @@ namespace LightGIS_1._0.Properties {
             get {
                 object obj = ResourceManager.GetObject("edit_save_20x20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon EditingEditTool {
+            get {
+                object obj = ResourceManager.GetObject("EditingEditTool", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -191,6 +211,16 @@ namespace LightGIS_1._0.Properties {
         }
         
         /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon PanUp {
+            get {
+                object obj = ResourceManager.GetObject("PanUp", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap ProjectOrganize32 {
@@ -251,6 +281,26 @@ namespace LightGIS_1._0.Properties {
         }
         
         /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon RouteAddBarrier {
+            get {
+                object obj = ResourceManager.GetObject("RouteAddBarrier", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon RouteAddStop {
+            get {
+                object obj = ResourceManager.GetObject("RouteAddStop", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap SelectionClearSelected32 {
@@ -287,6 +337,16 @@ namespace LightGIS_1._0.Properties {
             get {
                 object obj = ResourceManager.GetObject("SelectionSelectAll32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon SelectionSelectTool {
+            get {
+                object obj = ResourceManager.GetObject("SelectionSelectTool", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -361,12 +421,32 @@ namespace LightGIS_1._0.Properties {
         }
         
         /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon ZoomIn {
+            get {
+                object obj = ResourceManager.GetObject("ZoomIn", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap ZoomInTool32 {
             get {
                 object obj = ResourceManager.GetObject("ZoomInTool32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon ZoomOut {
+            get {
+                object obj = ResourceManager.GetObject("ZoomOut", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

@@ -49,48 +49,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAddField.cs">
+    <Compile Include="Application\ChildFrm\frmAddField.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddField.Designer.cs">
+    <Compile Include="Application\ChildFrm\frmAddField.Designer.cs">
       <DependentUpon>frmAddField.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCreateLayer.cs">
+    <Compile Include="Application\ChildFrm\frmCreateLayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCreateLayer.Designer.cs">
+    <Compile Include="Application\ChildFrm\frmCreateLayer.Designer.cs">
       <DependentUpon>frmCreateLayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="Application\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="Application\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GeoObject\Geometry.cs" />
-    <Compile Include="GeoObject\Geometry\MultiPolygon.cs" />
-    <Compile Include="GeoObject\Geometry\MultiPolyLine.cs" />
-    <Compile Include="GeoObject\Geometry\PointD.cs" />
-    <Compile Include="GeoObject\Geometry\Polygon.cs" />
-    <Compile Include="GeoObject\Geometry\PolyLine.cs" />
-    <Compile Include="GeoObject\RectangleD.cs" />
-    <Compile Include="GeoRecordSet\GeoRecordSet.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapControl.Designer.cs">
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\DataIO\DataIO.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\ClassBreakRenderer.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\GeoSymbol\ColorTranslator.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\GeoSymbol\LineSymbol.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\GeoSymbol\PointSymbol.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\GeoSymbol\PolygonSymbol.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\SimpleRenderer.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\GeoSymbol\Symbol.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\GeoSymbol\TextSymbol.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\Renderer.cs" />
+    <Compile Include="Src\GeoLayer\GeoRenderer\UniqueValueRenderer.cs" />
+    <Compile Include="Src\GeoMap\ProjectedCoordinateSystem.cs" />
+    <Compile Include="Src\GeoObject\Geometry.cs" />
+    <Compile Include="Src\GeoObject\Geometry\MultiPolygon.cs" />
+    <Compile Include="Src\GeoObject\Geometry\MultiPolyLine.cs" />
+    <Compile Include="Src\GeoObject\Geometry\PointD.cs" />
+    <Compile Include="Src\GeoObject\Geometry\Polygon.cs" />
+    <Compile Include="Src\GeoObject\Geometry\PolyLine.cs" />
+    <Compile Include="Src\GeoObject\RectangleD.cs" />
+    <Compile Include="Src\GeoLayer\GeoIndex.cs" />
+    <Compile Include="Src\GeoLayer\Layer.cs" />
+    <Compile Include="Src\GeoMap\Map.cs" />
+    <Compile Include="Src\GeoLayer\LayerTools.cs" />
+    <Compile Include="Application\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="searchFrm.cs">
+    <Compile Include="Application\ChildFrm\frmSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="searchFrm.Designer.cs">
-      <DependentUpon>searchFrm.cs</DependentUpon>
+    <Compile Include="Application\ChildFrm\frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmAddField.resx">
+    <Compile Include="TreeViewEnhanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewEnhanced.Designer.cs">
+      <DependentUpon>TreeViewEnhanced.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Application\ChildFrm\frmAddField.resx">
       <DependentUpon>frmAddField.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateLayer.resx">
+    <EmbeddedResource Include="Application\ChildFrm\frmCreateLayer.resx">
       <DependentUpon>frmCreateLayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="Application\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <DependentUpon>MapControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,8 +132,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="searchFrm.resx">
-      <DependentUpon>searchFrm.cs</DependentUpon>
+    <EmbeddedResource Include="Application\ChildFrm\frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewEnhanced.resx">
+      <DependentUpon>TreeViewEnhanced.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,168 +149,128 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ProjectOrganize32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProjectOrganize32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\RasterImageAnalysisClip32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RasterImageAnalysisClip32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SelectionClearSelected32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SelectionClearSelected32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SelectionSelectAll32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SelectionSelectAll32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\TableDeleteHighlighted32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TableDeleteHighlighted32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\VersionChange32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VersionChange32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\RepresentationLassoSelectTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RepresentationLassoSelectTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\RepresentationPropertyOverrideA32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RepresentationPropertyOverrideA32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\RepresentationSelectTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RepresentationSelectTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\GenericProperties_B_32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GenericProperties_B_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\IdentifyTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IdentifyTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\PanTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PanTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SelectionClearSelection_B_32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SelectionClearSelection_B_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SelectionPanToSelected32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SelectionPanToSelected32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SelectionSelectTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SelectionSelectTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SelectionZoomToSelected32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SelectionZoomToSelected32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ZoomFixedZoomIn32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ZoomFixedZoomIn32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ZoomFixedZoomOut32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ZoomFixedZoomOut32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ZoomInTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ZoomInTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ZoomOutTool32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ZoomOutTool32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\edit-save_20x20.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\edit-save_20x20.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\GenericDocument32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GenericDocument32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\LayerBasemapNew32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayerBasemapNew32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\LayerGenericGroupLayerOff32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayerGenericGroupLayerOff32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\LayerShadow32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayerShadow32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\LayerZoomTo32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayerZoomTo32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Layout32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Layout32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\MapWithStarBlue32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MapWithStarBlue32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\DataAdd.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DataAdd.ico" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\TrackingDataAdd32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TrackingDataAdd32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\left.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\left.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\right.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\right.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\favicon.ico" />
-    <Content Include="Resources\graphics.ico" />
+    <EmbeddedResource Include="Resources\favicon.ico" />
+    <EmbeddedResource Include="Resources\graphics.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cross.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PanUp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomIn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomOut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\EditingEditTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RouteAddBarrier.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RouteAddStop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SelectionSelectTool.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
