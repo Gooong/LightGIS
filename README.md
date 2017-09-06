@@ -7,4 +7,4 @@
 * 地图编辑、要素选择
 * 专题制图、地图注记
 
-![image](https://github.com/Gooong/LightGIS/show.gif)
+![image](https://github.com/Gooong/LightGIS/blob/master/show.gif)
