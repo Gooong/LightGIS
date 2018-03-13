@@ -1,10 +1,10 @@
 # LightGIS
-支持地图浏览、编辑和制图的GIS软件
+A light GIS desktop software for showing, querying, editing and rendering map.
 
-### 功能
-* shp文件的读入与存储
-* 地图放大、缩小、漫游
-* 地图编辑、要素选择
-* 专题制图、地图注记
+###  Features
+* load and save .shp file
+* browse map  
+* edit, select and query spatial data
+* rendering, mapping and labeling
 
 ![image](https://github.com/Gooong/LightGIS/blob/master/show.gif)
